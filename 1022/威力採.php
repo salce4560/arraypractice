@@ -1,13 +1,11 @@
 <?php
 
 $nums=[];
-$i=0;
-while(cont($nums)<6){
+for ($i=0; $i<6 ; $i++) { 
     $t=rand(1,38);
-    if (!in_array($t,$nums)) {
-        $nums[]=$t;
+    if(!in_array($t,$nums)) {
+        $nums[]=$t;        
     }
-    $i++;
 }
 
 
