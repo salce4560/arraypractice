@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    font-family: '標楷體';
+    overflow: hidden;
+
+}
+.main{ 
+display:flex;
+width:1024px;
+padding: 0 12px; 
+margin: 10px auto ;
+text-align: center;
+justify-content: center;
+flex-wrap: wrap; 
+}
+
+body>*:not(aside,section),aside>*,section>*{
+    border:1px  solid lightgray;
+}
+/* .top */
+.top{
+   flex-basis: 1000px;
+   height: 65px;
+}
+.top>a{
+display: block;
+}
+/* aside
+1.flex item?
+2.我的container是誰body
+3.flex-direction row /col
+
+
+
+
+
+
+*/
+.aside{
+    flex-basis:215px;
+    height: calc(768px- 65px -20px);
+    display: flex;
+    flex-direction: column;
+}
+/* menu
+container:
+aside
+flex-direction:column
+item
+flex-basis
+
+
+
+
+*/
+.menu{
+    flex-basis: calc(100% - 25px);
+    height: 65px;
+}
+.asid-menu-header{
+color:#FF00FF;
+font-size: 24px;
+text-decoration: underline;
+text-align: center;
+font-weight: 500;
+}
+.aside>nav>a{
+    color: green;
+    background: url(./image/menu1.png);
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.aside>nav>a:hover{
+    background:url(./image/menu2.png) ;
+}
+.update{
+    flex-basis: 25px;
+}
+.section{
+    flex-basis: calc(1000px - 215px);
+    display: flex;
+    flex-flow: column nowrap;
+}
+.marquee{
+    flex-basis: 29px;
+    padding: 0 calc((100% - 770px -2px)/2 );
+    color: #0000FF;
+    font-size: 24px;
+    font-family:'標楷體'
+}
+
+
+
+.content{
+    flex-basis: calc(1000px - 29px);
+    flex-flow: column nowrap;
+
+}
+.footer{flex-basis: 1000px;
+    height: 20px;
+    color: black;
+}
