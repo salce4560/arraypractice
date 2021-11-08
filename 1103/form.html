@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+     table{
+         border: 1px solid lightblue;
+         text-align: center;
+     }
+     tr,td{
+         border:  1px solid lightgreen;;
+     }
+     th{
+         border: 1px solid lightcoral;
+     }
+        
+    </style>
+</head>
+
+<body>
+  <script>
+      const form=document.getElementById("myForm");
+      const form=document.getElementById("itemName1");
+      const form=document.getElementById("itemPrice1");
+      const form=document.getElementById("itemCount1");
+      const form=document.getElementById("itemTotal1");
+
+      const form=document.getElementById("itemName2");
+      const form=document.getElementById("itemPrice2");
+      const form=document.getElementById("itemCount2");
+      const form=document.getElementById("itemTotal2");
+
+      const form=document.getElementById("itemName3");
+      const form=document.getElementById("itemPrice3");
+      const form=document.getElementById("itemCount3");
+      const form=document.getElementById("itemTotal3");
+
+     
+      const form=document.getElementById("itemName4");
+      const form=document.getElementById("itemPrice4");
+      const form=document.getElementById("itemCount4");
+      const form=document.getElementById("itemTotal4");
+
+
+      form.addEventListener("submit",function(e){
+          e.preventDefault();
+          calResult=parseInt(itemPrice1.value)*pareInt(item)
+
+      })
+  </script>  
+<table>
+<tr>
+<th>品項</th>
+<th>單價</th>
+<th>數量</th>
+</tr>
+<tr>
+    <td><input type="text" name="" id="" value="拿鐵"></td>
+    <td><input type="number" name="" id="" value="150"></td>
+    <td><input type="number" name="" id="" value="0"></td>
+</tr>
+<tr>
+    <td><input type="text" name="" id="" value="星冰樂"></td>
+    <td><input type="text" name="" id="" value="200"></td>
+    <td><input type="text" name="" id="" value="0"></td>
+</tr>
+<tr>
+    <td><input type="text" name="itemName2" id="itemName2" value="美日咖啡"></td>
+    <td><input type="text" name="itemPrice3" id="itemPrice3" value="100"></td>
+    <td><input type="text" name="itemCount3" id="itemCount3" value="0"></td>
+    <td><input type="text" name="itemTotal3" id="itemTotal3" value="0"></td>
+</tr>
+<tr>
+    <td colspan="4">
+        <input type="submit" value="訂購成功">
+    </td>
+</tr>
+
+</table>
+</body>
+
+</html>

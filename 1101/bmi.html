@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form action="" id="myForm">
+        <label for="num1">num1</label>
+        <input type="number1" name="num1" id="num1">
+
+        <label for="num2">num2</label>
+        <input type="number2" name="num2" id="num2">
+
+        <label for="num3">option</label>
+        <input type="number3" name="num3" id="option">
+
+        <input type="submit" value="submit" id="result">
+        
+    </form>
+    <p id="pResult">result</p>
+
+    <script>
+   const form =document.getElementById("myForm");
+   const num1Input =document.getElementById("num1");
+   const num2Input =document.getElementById("num2");
+   const optionInput =document.getElementById("option");
+   const resultBtn =document.getElementById("result");
+   
+
+   form.addEventListener("submit",function(e){
+       e.preventDefault();
+    //    console.log("submit".e);
+       console.log(num1Input.value);
+       console.log(num2Input.value);
+       console.log(optionInput.value);
+       calResult= parseInt(num1Input.value)+parseInt(num2Input.value);
+       console.log(typeof(calResult));
+       console.log(calResult);
+       pResult.innerText="Result:" + calResult;
+   }
+   )
+   
+
+    </script>
+</body>
+
+</html>

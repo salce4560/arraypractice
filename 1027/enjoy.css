@@ -1,0 +1,75 @@
+*{
+
+}
+.main>*:not(aside,section),.aside>*,.section>*,.footer>*{
+    border:1px solid gray;
+}
+
+.main{
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.top{
+   flex-basis: 1000px;
+   height: 65px;
+}
+
+
+
+
+.aside{display: flex;
+    flex-direction: column;
+   flex-basis: 215px;
+   height: calc(768px - 20px);
+
+}
+.menu{
+    flex-basis: calc(100% - 25px );
+    width: 215px;
+    flex-direction: column;
+}
+
+.update{flex-basis:25px ;
+    width: 215px;
+
+}
+
+
+
+.section{
+    display: flex;
+    flex-flow: column;
+    flex-basis: calc(1000px - 215px);
+
+
+   }
+
+
+
+.marquee{
+    flex-basis: 29px;
+    
+}
+
+.content{
+    flex-basis: calc(100% - 29px);
+    
+}
+.aside>nav>a{
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+}
+
+.footer{flex-basis: 1000px;
+height: 20px;}
+
+.introduce{
+   
+    
+}
