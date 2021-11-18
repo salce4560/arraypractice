@@ -136,7 +136,7 @@ for($i=0;$i<$allCells;$i++){
     if(is_numeric($td[$i])){
         $date=date("$year-$month-").$td[$i];
     }
-
+ 
     if($w==0 || $w==6){
         echo "<div class='dayoff cell'>";
     }else{
